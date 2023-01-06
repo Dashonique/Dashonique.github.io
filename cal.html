@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+            background-color: cyan;
+        }
+        button {
+            width: 100px;
+            height: 100px;
+            font-weight: bold;
+            border-radius: 35px;
+        }
+        input {
+            width: 302px;
+            height: 90px;
+            border-radius: 35px;
+        }
+        h1 {
+            text-align: center;
+            color: navy;
+        }
+        </style>
+</head>
+<body>
+    <script src="cal.js"></script>
+    <h1>Calculator using HTML and JS</h1>
+    <div>
+        <table id="calc">
+            <tr>
+                <td colspan="3"><input type="text" id="res" readonly></td>
+                <!-- clr() function clears all the values -->
+                <td><button type="button" onclick="clr()">C</button></td>
+            </tr>
+            <tr>
+                <!-- disp() function displays the value of clicked button -->
+                <td><button type="button" onclick="disp(this)">1</button></td>
+                <td><button type="button" onclick="disp(this)">2</button></td>
+                <td><button type="button" onclick="disp(this)">3</button></td>
+                <td><button type="button" onclick="disp(this)">+</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="disp(this)">4</button></td>
+                <td><button type="button" onclick="disp(this)">5</button></td>
+                <td><button type="button" onclick="disp(this)">6</button></td>
+                <td><button type="button" onclick="disp(this)">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="disp(this)">7</button></td>
+                <td><button type="button" onclick="disp(this)">8</button></td>
+                <td><button type="button" onclick="disp(this)">9</button></td>
+                <td><button type="button" onclick="disp(this)">*</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="disp(this)">.</button></td>
+                <td><button type="button" onclick="disp(this)">0</button></td>
+                <!-- calc() function evaluates the mathematical expression -->
+                <td><button type="button" onclick="calc()">=</button></td>
+                <td><button type="button" onclick="disp(this)">/</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
